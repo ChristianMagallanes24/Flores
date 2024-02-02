@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import miLogo from "../../assets/logo.png";
 import "../../components/NavBar/_NavBar.scss";
+import { IoIosRose } from "react-icons/io";
+import { GiCommercialAirplane } from "react-icons/gi";
+import { IoIosHome } from "react-icons/io";
+import { MdContactPhone } from "react-icons/md";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -27,6 +31,7 @@ const Navbar = () => {
           className={`nav-btn ${location.pathname === "/" && "active"}`}
           onClick={() => handleButtonClick("")}
         >
+          <IoIosHome className="nav-icon" />
           Inicio
         </Link>
         <Link
@@ -36,6 +41,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleButtonClick("Productos")}
         >
+          <IoIosRose className="nav-icon" />
           Productos
         </Link>
         <Link
@@ -45,6 +51,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleButtonClick("servicios")}
         >
+          <GiCommercialAirplane className="nav-icon" />
           pagos y envios
         </Link>
         <Link
@@ -52,7 +59,9 @@ const Navbar = () => {
           className={`nav-btn ${location.pathname === "/contacto" && "active"}`}
           onClick={() => handleButtonClick("contacto")}
         >
-          Contacto
+          <MdContactPhone className="nav-icon" />
+          Contacto 
+          
         </Link>
       </div>
       <div

@@ -21,10 +21,14 @@ body {
   background-size: 603px auto, 487px auto; 
   background-position: 0px 300px, calc(100% - 0px) 0px;
   @include desktop1{
-    background-size: auto;
+    
   } 
   @include mobile{
-    background: none;
+    margin: 0 auto;
+    background: url("./assets/test.png") left top no-repeat,
+      url("./assets/testt.png") right top no-repeat;
+    background-size: 603px auto, 487px auto; 
+    background-position: 0px 300px, calc(100% - 0px) 0px;
   }
   
 }

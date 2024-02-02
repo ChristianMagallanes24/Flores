@@ -5,19 +5,24 @@
 }
 
 @mixin tablet {
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 892px) {
     @content;
   }
 }
 
 @mixin tablet2 {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 596px) {
+    @content;
+  }
+}
+@mixin mobile1 {
+  @media screen and (max-width: 468px) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 424px) {
     @content;
   }
 }

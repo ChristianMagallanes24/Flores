@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LuPackageCheck } from "react-icons/lu";
 import miP from "../../assets/p1.webp";
 import miP2 from "../../assets/p2.jpg";
 import miP3 from "../../assets/p3.jpg";
@@ -41,7 +42,9 @@ const Productos = () => {
       <div className='header-productos'>
         <img className='header-img' src={miHeader} alt="p" />
       </div>
-
+      <div className='span-productos'>
+        <span><LuPackageCheck  className='spann'/>Envios a todo el pais!</span>
+      </div>
       <section className='section-productos'>
         <div className='card'> 
           <h2 className='card-titulo'>Corazon</h2>
@@ -79,6 +82,7 @@ const Productos = () => {
           <button className='producto-btn' onClick={handleEncargarClick}>Encargar</button>
         </div>
       </section>
+     
 
       {/* Modal para la imagen en pantalla completa */}
       {selectedImage && (

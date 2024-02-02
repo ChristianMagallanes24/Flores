@@ -6,6 +6,9 @@ import miImagen from "../../assets/headerimg.png";
 const Header = () => {
   return (
     <header className="header">
+      <div className="img-header-container">
+        <img className="header-img" src={miImagen} alt="Mi Imagen" />
+      </div>
       {/* Información del header */}
       <div className="header-info">
         <div className="header-text">
@@ -19,15 +22,14 @@ const Header = () => {
             </p>
           </div>
         </div>
+        
         {/* Utilizamos Link para enlazar a la página de productos */}
         <Link to="/Productos" className="btn-header">
           ver productos
         </Link>
       </div>
       {/* imagen del header */}
-      <div className="img-header-container">
-        <img className="header-img" src={miImagen} alt="Mi Imagen" />
-      </div>
+      
     </header>
   );
 };

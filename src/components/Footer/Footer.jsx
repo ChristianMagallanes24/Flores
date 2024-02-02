@@ -7,7 +7,7 @@ const Footer = () => {
             <h6>Contacto</h6>
             <div>
                 <p>WhatsApp: +59897007813</p>
-                <p>Email: 0Hw2G@example.com</p>
+                <p>Email: test@gmail.com</p>
             </div>
         </div>
       <div className="footer-content">

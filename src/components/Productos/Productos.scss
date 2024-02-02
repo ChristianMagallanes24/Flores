@@ -6,7 +6,7 @@
     box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
 
     .header-img {
-      height: 100%;
+     max-height: 100%;
     }
   }
 
@@ -15,22 +15,22 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 50px 100px;
+    margin: 30px;
     gap: 50px;
 
     .card {
-      position: relative;
+     text-align: center;
       border-radius: 10px;
       font-family: "DM Sans";
       background-color: rgba(255, 255, 255, 0.2);
       width: 350px;
-      height: 450px;
+      height: 410px;
       display: flex;
       flex-direction: column;
       align-items: center;
       box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
       transition: transform 0.3s ease-in-out;
-      overflow: hidden;
+      
       cursor: pointer; /* Añadido para indicar que la tarjeta es clickeable */
 
       &:hover {
@@ -56,7 +56,7 @@
       .img {
         max-width: 100%;
         height: 150px;
-        padding: 5px;
+        
         overflow: hidden;
       
         .img-producto {
@@ -70,8 +70,7 @@
       
 
       .producto-btn {
-        position: absolute;
-        bottom: 40px;
+       
         background-color: #db7d7d;
         border: none;
         color: rgb(255, 255, 255);
@@ -116,8 +115,19 @@
       top: 20px;
       right: 20px;
       color: white;
-      font-size: 24px;
+      font-size: 44px;
       cursor: pointer;
     }
+  }
+}
+
+.span-productos{
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  font-size: 30px;
+  .spann{
+    font-size: 90px;
   }
 }
