@@ -1,0 +1,123 @@
+.productos-container {
+  .header-productos {
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
+
+    .header-img {
+      height: 100%;
+    }
+  }
+
+  .section-productos {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 50px;
+
+    .card {
+      position: relative;
+      border-radius: 10px;
+      font-family: "DM Sans";
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 350px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
+      cursor: pointer; /* Añadido para indicar que la tarjeta es clickeable */
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .card-titulo {
+        padding: 10px 0px;
+      }
+
+      .card-precio {
+        text-transform: uppercase;
+        font-size: 24px;
+      }
+
+      .card-descripcion {
+        text-align: center;
+        font-size: 20px;
+        width: 300px;
+        padding: 2px;
+      }
+
+      .img {
+        max-width: 100%;
+        height: 150px;
+        padding: 5px;
+        overflow: hidden;
+      
+        .img-producto {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      
+     
+      }
+      
+
+      .producto-btn {
+        position: absolute;
+        bottom: 40px;
+        background-color: #db7d7d;
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #a85555;
+        }
+      }
+    }
+  }
+
+  .fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+
+    img {
+      max-width: 80%; /* Ajustado para mostrar solo el 80% del ancho de la pantalla */
+      max-height: 80%; /* Ajustado para mostrar solo el 80% de la altura de la pantalla */
+      object-fit: contain;
+
+    }
+
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}
