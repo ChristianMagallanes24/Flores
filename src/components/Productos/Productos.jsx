@@ -3,7 +3,7 @@ import { LuPackageCheck } from "react-icons/lu";
 import miP from "../../assets/p1.webp";
 import miP2 from "../../assets/p2.jpg";
 import miP3 from "../../assets/p3.jpg";
-import miHeader from "../../assets/headerp.png";
+
 import "./Productos.scss";
 
 const Productos = () => {
