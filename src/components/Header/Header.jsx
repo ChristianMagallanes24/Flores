@@ -18,7 +18,7 @@ const Header = () => {
 
           <div>
             <p className="parrafo-header">
-              el mejor regalo para san valentín en este 14 de febrero!
+            🎁 el mejor regalo para san valentín en este 14 de febrero!
             </p>
           </div>
         </div>

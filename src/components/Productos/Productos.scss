@@ -1,3 +1,4 @@
+@import "../../Medidas.scss";
 .productos-container {
   .header-productos {
     height: 500px;
@@ -71,7 +72,7 @@
 
       .producto-btn {
        
-        background-color: #db7d7d;
+        background-color: #f88d84;
         border: none;
         color: rgb(255, 255, 255);
         padding: 10px 32px;
@@ -84,7 +85,7 @@
         transition: background-color 0.3s ease-in-out;
 
         &:hover {
-          background-color: #a85555;
+          background-color: #FF686B;
         }
       }
     }
@@ -127,7 +128,15 @@
   background-color: #000;
   padding: 20px;
   font-size: 30px;
+  @include mobile3{
+    font-size: 24px;
+  }
   .spann{
     font-size: 90px;
+    @include mobile3{
+      font-size: 34px;
+      margin-right: 5px;
+    }
+    
   }
 }

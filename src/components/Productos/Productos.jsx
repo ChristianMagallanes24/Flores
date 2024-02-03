@@ -39,9 +39,9 @@ const Productos = () => {
 
   return (
     <div className="productos-container">
-      <div className='header-productos'>
+      {/* <div className='header-productos'>
         <img className='header-img' src={miHeader} alt="p" />
-      </div>
+      </div> */}
       <div className='span-productos'>
         <span><LuPackageCheck  className='spann'/>Envios a todo el pais!</span>
       </div>

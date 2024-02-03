@@ -26,3 +26,8 @@
     @content;
   }
 }
+@mixin mobile3 {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}

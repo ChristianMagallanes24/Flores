@@ -47,7 +47,7 @@
       }
     }
     .header-titulo {
-      color: #f315f3;
+      color: #000000;
       font-family: Montserrat;
       font-size: 68.83px;
       font-style: normal;
@@ -72,8 +72,8 @@
       color: var(--Colores-diseo-alta-Negro, #000);
       font-size: 25px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
+      font-weight: 700;
+     
       @include tablet{
         font-size: 24px;
       }
@@ -84,11 +84,23 @@
       @include mobile {
         font-size: 16px;
       }
+      @include mobile3{
+        width: 350px;
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 20px;
+       width: 320px;
+       border-radius: 20px;
+       border-left: solid 4px #fc7366;
+       border-right: solid 4px #fc7366;
+       background-color: #ffffff9f;
+        
+      }
     }
 
     .btn-header {
       border-radius: 42.188px;
-      background: var(--Colores-diseo-alta-Negro, #db7d7d);
+      background: var(--Colores-diseo-alta-Negro, #FFA69E);
       box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
       color: #fff;
       font-feature-settings: "clig" off, "liga" off;
@@ -119,7 +131,7 @@
     min-width: 680px;
     height: 609px;
     overflow: hidden;
-    border: solid 12px #db7d7d;background-color: #ffffff83;
+    border: solid 12px #7c7878;background-color: #ffffff83;
     border-radius: 50%;
     display: flex;
     margin: 20px;
@@ -143,6 +155,10 @@
     }
     @include mobile {
      
+    }
+    @include mobile3{
+      min-width: 340px;
+      height: 340px;
     }
     .header-img {
       height: 110%;
