@@ -1,7 +1,7 @@
 // Servicios.jsx
 import React, { useEffect } from "react";
 import miPago from "../../assets/pago.jpg";
-import miEnvio from "../../assets/envios.jpg";
+
 
 import "./_Servicios.scss";
 
