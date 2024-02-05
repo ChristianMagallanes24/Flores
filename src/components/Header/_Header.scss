@@ -48,10 +48,12 @@
     }
     .header-titulo {
       color: #000000;
-      font-family: Montserrat;
+      font-family: "Protest Riot", sans-serif;
+      
       font-size: 68.83px;
       font-style: normal;
       font-weight: 700;
+      
       line-height: 48.83px;
       @include tablet{
         font-size: 58px;
@@ -83,6 +85,7 @@
       }
       @include mobile {
         font-size: 16px;
+        width: 350px;
       }
       @include mobile3{
         width: 350px;
@@ -100,7 +103,7 @@
 
     .btn-header {
       border-radius: 42.188px;
-      background: var(--Colores-diseo-alta-Negro, #FFA69E);
+      background: var(--Colores-diseo-alta-Negro, #FF686B);
       box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
       color: #fff;
       font-feature-settings: "clig" off, "liga" off;
@@ -131,7 +134,7 @@
     min-width: 680px;
     height: 609px;
     overflow: hidden;
-    border: solid 12px #7c7878;background-color: #ffffff83;
+    border: solid 12px #FF686B;background-color: #e7e4e441;
     border-radius: 50%;
     display: flex;
     margin: 20px;
@@ -139,19 +142,19 @@
     justify-content: center;
     align-items: center;
     @include desktop1 {
-      height: 530px;
+      height: 590px;
       min-width: 590px;
     }
     @include tablet{
-     min-width: 480px;
+     min-width: 580px;
     }
     @include tablet2{
       min-width: 450px;
-      min-height: 310px;
+      height: 450px;
     }
     @include mobile1 {
-      min-width: 380px;
-      height: 380px;
+      min-width: 350px;
+      height: 350px;
     }
     @include mobile {
      
