@@ -1,5 +1,6 @@
 @import "../../Medidas.scss";
 .productos-container {
+  
   .header-productos {
     height: 500px;
     display: flex;
@@ -23,7 +24,7 @@
      text-align: center;
       border-radius: 10px;
       font-family: "DM Sans";
-      background-color: #FF686B;
+     
       width: 350px;
       
       display: flex;
@@ -40,7 +41,7 @@
 
       .card-titulo {
       margin: 0 0 0 0;
-        background-color: #ffffff;
+       
         color: #000000;
         font-family: "Protest Riot", sans-serif;
       }
@@ -55,7 +56,7 @@
         font-size: 24px;
         border-radius: 0px 20px 20px 0px;
        
-        color: #fff;
+        color: #000000;
       }
 
       .card-descripcion {
@@ -63,10 +64,16 @@
         display: flex;
         align-items: center;
         font-size: 20px;
-        color: #fff;
+        color: #000000;
         width: 80%;
         margin-left: 30px;
         font-family: "Protest Riot", sans-serif;
+        @include mobile{
+          font-size: 18px;
+          width: 90%;
+          margin: 0;
+          margin-left: 10px;
+        }
         
       }
 

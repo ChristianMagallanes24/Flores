@@ -60,19 +60,17 @@ border-radius: 50%;
 }
 
 @media (max-width: 870px) {
- 
   .nav_items {
     position: absolute;
     top: 60px;
     left: 0;
     background: #ffffff;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-radius: 0px 0px 0px 200px;
+    border-radius: 0px 0px 0px 100px;
     transform: translateX(-100%);
   }
 

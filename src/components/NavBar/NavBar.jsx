@@ -54,15 +54,8 @@ const Navbar = () => {
           <GiCommercialAirplane className="nav-icon" />
           pagos y envios
         </Link>
-        <Link
-          to="/contacto"
-          className={`nav-btn ${location.pathname === "/contacto" && "active"}`}
-          onClick={() => handleButtonClick("contacto")}
-        >
-          <MdContactPhone className="nav-icon" />
-          Contacto 
-          
-        </Link>
+      
+        
       </div>
       <div
         className={`nav_toggle ${isOpen && "open"}`}

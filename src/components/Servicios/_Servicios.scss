@@ -43,7 +43,7 @@
         font-weight: 700;
         @include tablet {
             text-align: center;
-            font-size: 60px;
+            font-size: 28px;
             width: 100%;
           }
       }
@@ -64,8 +64,8 @@
             padding-left: 30px;
             position: relative;
             line-height: 1.5;
-            font-size: 24px;
-
+            font-size: 18px;
+            margin-bottom: 10px;
             &::before {
               content: "✔";
               position: absolute;

@@ -47,40 +47,31 @@ const Productos = () => {
       </div>
       <section className='section-productos'>
         <div className='card'> 
-          <h2 className='card-titulo'>Corazon</h2>
+          <h2 className='card-titulo'>Flor individual</h2>
           <div className='img' onClick={() => handleImageClick(miP)}>
             <img className='img-producto' src={miP} alt="p" />
           </div>
           <div className='card-decripcion'>
-            <p className='card-precio'>$500</p>
-            <p className='card-descripcion'>corazon con 8 flores, bombones, foto</p>
+            <p className='card-precio'>$150</p>
+            <p className='card-descripcion'>flor individual, colores:
+            rojo, rosa, blanco, azul.</p>
           </div>
           <button className='producto-btn' onClick={handleEncargarClick}>Encargar</button>
         </div>
 
         <div className='card'> 
-          <h2 className='card-titulo'>Floral</h2>
+          <h2 className='card-titulo'>ramo de 4</h2>
           <div className='img' onClick={() => handleImageClick(miP2)}>
             <img className='img-producto' src={miP2} alt="p" />
           </div>
           <div className='card-decripcion'>
-            <p className='card-precio'>$800</p>
-            <p className='card-descripcion'>corazon con 8 flores, bombones, foto</p>
+            <p className='card-precio'>$300</p>
+            <p className='card-descripcion'>ramo de 4:, colores a eleccion: <br />
+            rojo, rosa, blanco, azul.</p>
           </div>
           <button className='producto-btn' onClick={handleEncargarClick}>Encargar</button>
         </div>
 
-        <div className='card'> 
-          <h2 className='card-titulo'>Flor individual</h2>
-          <div className='img' onClick={() => handleImageClick(miP3)}>
-            <img className='img-producto' src={miP3} alt="p" />
-          </div>
-          <div className='card-decripcion'>
-            <p className='card-precio'>$900</p>
-            <p className='card-descripcion'>corazon con 8 flores, bombones, foto</p>
-          </div>
-          <button className='producto-btn' onClick={handleEncargarClick}>Encargar</button>
-        </div>
       </section>
      
 
