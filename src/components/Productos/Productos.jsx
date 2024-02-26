@@ -21,14 +21,28 @@ const Productos = () => {
     setSelectedImage(null);
   };
 
-  const handleEncargarClick = () => {
+  const handleEncargarClickFlorIndividual = () => {
     const productoSeleccionado = {
-      nombre: "Nombre del producto",
-      precio: "$500",
-      descripcion: "Corazon con 8 flores, bombones, foto"
+      nombre: "Flor individual",
+      precio: "$150",
     };
 
-    const mensajeWhatsApp = `Hola, estoy interesado en encargar el producto ${productoSeleccionado.nombre}. Detalles: Precio: ${productoSeleccionado.precio}, Descripción: ${productoSeleccionado.descripcion}`;
+    const mensajeWhatsApp = `Hola, estoy interesado en encargar el producto ${productoSeleccionado.nombre} ${productoSeleccionado.precio}`;
+
+    const numeroTelefono = "+59897007813";
+
+    const enlaceWhatsApp = `https://wa.me/${numeroTelefono}/?text=${encodeURIComponent(mensajeWhatsApp)}`;
+
+    window.open(enlaceWhatsApp, '_blank');
+  };
+
+  const handleEncargarClickRamoDe4 = () => {
+    const productoSeleccionado = {
+      nombre: "Ramo de 4",
+      precio: "$300",
+    };
+
+    const mensajeWhatsApp = `Hola, estoy interesado en encargar el producto ${productoSeleccionado.nombre} ${productoSeleccionado.precio}`;
 
     const numeroTelefono = "+59897007813";
 
@@ -39,9 +53,6 @@ const Productos = () => {
 
   return (
     <div className="productos-container">
-      {/* <div className='header-productos'>
-        <img className='header-img' src={miHeader} alt="p" />
-      </div> */}
       <div className='span-productos'>
         <span><LuPackageCheck  className='spann'/>Envios a todo el pais!</span>
       </div>
@@ -56,7 +67,7 @@ const Productos = () => {
             <p className='card-descripcion'>flor individual, colores:
             rojo, rosa, blanco, azul.</p>
           </div>
-          <button className='producto-btn' onClick={handleEncargarClick}>Encargar</button>
+          <button className='producto-btn' onClick={handleEncargarClickFlorIndividual}>Encargar</button>
         </div>
 
         <div className='card'> 
@@ -69,11 +80,9 @@ const Productos = () => {
             <p className='card-descripcion'>ramo de 4:, colores a eleccion: <br />
             rojo, rosa, blanco, azul.</p>
           </div>
-          <button className='producto-btn' onClick={handleEncargarClick}>Encargar</button>
+          <button className='producto-btn' onClick={handleEncargarClickRamoDe4}>Encargar</button>
         </div>
-
       </section>
-     
 
       {/* Modal para la imagen en pantalla completa */}
       {selectedImage && (
